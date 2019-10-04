@@ -1,0 +1,92 @@
+p{
+color:red;
+/*全てのpタグ要素のcolorが赤になる*/
+}
+.class{
+color:red;
+/*全ての.classというクラス名を持つ要素のcolorが赤になる*/
+}
+#id{
+color:red;
+/*全ての#idというid名を持つ要素のcolorが赤になる*/
+}
+h1,p{
+color:red;
+/*全てのh1タグ要素とpタグ要素のcolorが赤になる*/
+}
+div p{
+color:red;
+/*全てのdivタグ要素の中にあるpタグ要素のcolorが赤になる*/
+}
+*{
+color:red;
+/*全ての要素のcolorが赤になる*/
+}
+div *{
+color:red;
+/*全てのdivタグ要素の中の全ての要素のcolorが赤になる*/
+}
+div > p{
+color:red;
+/*全てのdivタグ要素の中の子要素になるpタグ要素のcolorが赤になる*/
+}
+div + p{
+color:red;
+/*全てのdivタグ要素の直後にある同じ階層の全てのpタグ要素のみcolorが赤になる*/
+}
+div ~ p{
+color:red;
+/*全てのdivタグ要素の後にある同じ階層の全てのpタグ要素のcolorが赤になる*/
+}
+div :first-child{
+color:red;
+/*全てのdivタグ要素の中にある最初の要素のcolorが赤になる*/
+}
+div :last-child{
+color:red;
+/*全てのdivタグ要素の中にある最初の要素のcolorが赤になる*/
+}
+div :nth-child(n){
+color:red;
+/*全てのdivタグ要素の中にあるn番目の要素のcolorが赤になる*/
+}
+div :nth-child(xn){
+color:red;
+/*全てのdivタグ要素の中にあるxn番目の要素のcolorが赤になる 3nの場合は3の倍数番目*/
+}
+div :nth-child(odd){
+color:red;
+/*全てのdivタグ要素の中にある奇数番目の要素のcolorが赤になる*/
+}
+div :nth-child(even){
+color:red;
+/*全てのdivタグ要素の中にある偶数番目の要素のcolorが赤になる*/
+}
+p :first-letter{
+color:red;
+/*全てのpタグ要素の中にある最初の文字のcolorが赤になる*/
+}
+p :hover{
+color:red;
+/*全てのpタグ要素にカーソルを載せた時にcolorが赤になる*/
+}
+a :visited{
+color:red;
+/*全てのaタグ要素の訪問済みのリンクのcolorが赤になる*/
+}
+a :link{
+color:red;
+/*全てのaタグ要素の未訪問のリンクのcolorが赤になる*/
+}
+a :active{
+color:red;
+/*全てのaタグ要素のクリックした瞬間のcolorが赤になる*/
+}
+p :not(.class){
+color:red;
+/*全てのpタグ要素の中で.classというクラス名を持たない要素のcolorが赤になる*/
+}
+p :not(.class):not(#id){
+color:red;
+/*全てのpタグ要素の中で.classというクラス名、もしくは#idというid名を持たない要素のcolorが赤になる*/
+}
