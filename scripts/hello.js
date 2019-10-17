@@ -39,7 +39,7 @@ module.exports = (robot) => {
   });
   robot.hear(/セレクタ|select|selecter/i, (msg) => {
     const username = msg.message.user.slack.profile.display_name;
-    msg.send('こちらからどうぞhttps://hato-dev.slack.com/files/UNHARUB5Y/FNYSRBCBZ/select_css.css');
+    msg.send('URL');
   });
   robot.hear(/しゃっくり/i, (msg) => {
     syar++;
